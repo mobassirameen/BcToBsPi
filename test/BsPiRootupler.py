@@ -40,14 +40,14 @@ process.triggerSelection = cms.EDFilter("TriggerResultsFilter",
                                         throw = cms.bool(False)
                                         )
 
-process.load("myAnalyzers.JPsiKsPAT.slimmedMuonsTriggerMatcher_cfi")  
+process.load("myAnalyzers.BsPiPAT.slimmedMuonsTriggerMatcher_cfi")  
 
-process.load("myAnalyzers.JPsiKsPAT.PsiphiRootupler_cfi")
+process.load("myAnalyzers.BsPiPAT.BsPiRootupler_cfi")
 process.rootuple.dimuons = cms.InputTag('slimmedMuonsWithTrigger') 
 #process.rootuple.dimuons = cms.InputTag('miniaodPATMuonsWithTrigger')                                                                                
 
 process.TFileService = cms.Service("TFileService",
-       fileName = cms.string('Rootuple_BstoJpsiphi_2018_MiniAOD.root'),                                                                            
+       fileName = cms.string('Rootuple_BctoBsPi_2018MC_MiniAOD.root'),                                                                            
 )
 
 
