@@ -1,5 +1,5 @@
-#ifndef _JPsiphi_h
-#define _JPsiphi_h
+#ifndef _BsPi_h
+#define _BsPi_h
 
 // system include files
 #include <memory>
@@ -69,10 +69,10 @@
 // class decleration
 //
 
-class JPsiphi : public edm::EDAnalyzer {
+class BsPi : public edm::EDAnalyzer {
 public:
-  explicit JPsiphi(const edm::ParameterSet&);
-  ~JPsiphi();
+  explicit BsPi(const edm::ParameterSet&);
+  ~BsPi();
   void fillPsi(const reco::Candidate& genpsi);
   void fillV0(const reco::Candidate& genv0);
   int const getMuCat(reco::Muon const& muon) const;

@@ -1,7 +1,7 @@
 // -*- C++ -*-
 //
-// Package:    JPsiphi
-// Class:      JPsiphi
+// Package:    BsPi
+// Class:      BsPi
 // 
 //=================================================
 // original author:  Jhovanny Andres Mejia        |
@@ -13,7 +13,7 @@
 #include <memory>
 
 // user include files
-#include "myAnalyzers/JPsiKsPAT/src/JPsiphi.h"
+#include "myAnalyzers/JPsiKsPAT/src/BsPi.h"
 
 #include "FWCore/Framework/interface/Frameworkfwd.h"
 #include "FWCore/Framework/interface/EDAnalyzer.h"
@@ -87,7 +87,7 @@
 //
 // constructors and destructor
 //
-JPsiphi::JPsiphi(const edm::ParameterSet& iConfig)
+BsPi::BsPi(const edm::ParameterSet& iConfig)
   :
   dimuon_Label(consumes<edm::View<pat::Muon>>(iConfig.getParameter<edm::InputTag>("dimuons"))),
   trakCollection_label(consumes<edm::View<pat::PackedCandidate>>(iConfig.getParameter<edm::InputTag>("Trak"))),
@@ -156,14 +156,14 @@ JPsiphi::JPsiphi(const edm::ParameterSet& iConfig)
 }
 
 
-JPsiphi::~JPsiphi()
+BsPi::~BsPi()
 {
 
 }
 
 
 // ------------ method called to for each event  ------------
-void JPsiphi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
+void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 {
   using std::vector;
   using namespace edm;
@@ -635,7 +635,7 @@ void JPsiphi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
  
 }
 
-bool JPsiphi::IsTheSame(const pat::GenericParticle& tk, const pat::Muon& mu){
+bool BsPi::IsTheSame(const pat::GenericParticle& tk, const pat::Muon& mu){
   double DeltaEta = fabs(mu.eta()-tk.eta());
   double DeltaP   = fabs(mu.p()-tk.p());
   if (DeltaEta < 0.02 && DeltaP < 0.02) return true;
@@ -645,7 +645,7 @@ bool JPsiphi::IsTheSame(const pat::GenericParticle& tk, const pat::Muon& mu){
 // ------------ method called once each job just before starting event loop  ------------
 
 void 
-JPsiphi::beginJob()
+BsPi::beginJob()
 {
   std::cout << "Beginning analyzer job with value of isMC_ = " << isMC_ << std::endl;
 
@@ -772,11 +772,11 @@ JPsiphi::beginJob()
 
 
 // ------------ method called once each job just after ending the event loop  ------------
-void JPsiphi::endJob() {
+void BsPi::endJob() {
   tree_->GetDirectory()->cd();
   tree_->Write();
 }
 
 //define this as a plug-in
-DEFINE_FWK_MODULE(JPsiphi);
+DEFINE_FWK_MODULE(BsPi);
 
