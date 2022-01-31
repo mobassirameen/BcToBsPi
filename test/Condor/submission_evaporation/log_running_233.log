@@ -1,0 +1,100 @@
+000 (6201460.233.000) 10/07 12:28:59 Job submitted from host: <188.185.71.142:9618?addrs=188.185.71.142-9618+[2001-1458-d00-7--100-388]-9618&alias=bigbird09.cern.ch&noUDP&sock=schedd_1971_8541_3>
+...
+040 (6201460.233.000) 10/07 12:34:10 Started transferring input files
+	Transferring to host: <128.142.119.224:9618?addrs=128.142.119.224-9618+[2001-1458-301-ae--100-3b7]-9618&noUDP&sock=15839_c21d_71491>
+...
+040 (6201460.233.000) 10/07 12:34:10 Finished transferring input files
+...
+001 (6201460.233.000) 10/07 12:34:11 Job executing on host: <128.142.119.224:9618?addrs=128.142.119.224-9618+[2001-1458-301-ae--100-3b7]-9618&noUDP&sock=3001_03ce_3>
+...
+006 (6201460.233.000) 10/07 12:34:19 Image size of job updated: 213548
+	135  -  MemoryUsage of job (MB)
+	137412  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 12:39:19 Image size of job updated: 519640
+	423  -  MemoryUsage of job (MB)
+	432396  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 12:44:21 Image size of job updated: 530704
+	434  -  MemoryUsage of job (MB)
+	444352  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 12:49:21 Image size of job updated: 537484
+	442  -  MemoryUsage of job (MB)
+	452252  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 12:54:21 Image size of job updated: 537484
+	442  -  MemoryUsage of job (MB)
+	452256  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 13:04:23 Image size of job updated: 543972
+	448  -  MemoryUsage of job (MB)
+	458740  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 13:09:23 Image size of job updated: 543972
+	448  -  MemoryUsage of job (MB)
+	458744  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 13:14:24 Image size of job updated: 543972
+	452  -  MemoryUsage of job (MB)
+	462776  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 13:19:24 Image size of job updated: 543972
+	453  -  MemoryUsage of job (MB)
+	463060  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 13:29:26 Image size of job updated: 543972
+	453  -  MemoryUsage of job (MB)
+	463764  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 13:49:27 Image size of job updated: 544008
+	455  -  MemoryUsage of job (MB)
+	465440  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 13:54:28 Image size of job updated: 544008
+	455  -  MemoryUsage of job (MB)
+	465448  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 13:59:28 Image size of job updated: 544916
+	456  -  MemoryUsage of job (MB)
+	466348  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 14:04:28 Image size of job updated: 544916
+	456  -  MemoryUsage of job (MB)
+	466352  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 14:09:29 Image size of job updated: 545828
+	457  -  MemoryUsage of job (MB)
+	467260  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 14:14:29 Image size of job updated: 545828
+	457  -  MemoryUsage of job (MB)
+	467264  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 14:29:30 Image size of job updated: 547424
+	458  -  MemoryUsage of job (MB)
+	468856  -  ResidentSetSize of job (KB)
+...
+006 (6201460.233.000) 10/07 14:34:26 Image size of job updated: 557476
+	458  -  MemoryUsage of job (MB)
+	468860  -  ResidentSetSize of job (KB)
+...
+040 (6201460.233.000) 10/07 14:34:26 Started transferring output files
+...
+040 (6201460.233.000) 10/07 14:34:26 Finished transferring output files
+...
+005 (6201460.233.000) 10/07 14:34:26 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 01:58:44, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:58:44, Sys 0 00:00:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	56872  -  Run Bytes Sent By Job
+	11401  -  Run Bytes Received By Job
+	56872  -  Total Bytes Sent By Job
+	11401  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :    91           1    219232 
+	   Memory (MB)          :   458        2000      2000 
+...

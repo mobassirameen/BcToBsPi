@@ -1,0 +1,80 @@
+000 (6037101.409.000) 09/15 19:00:56 Job submitted from host: <188.185.71.142:9618?addrs=188.185.71.142-9618+[2001-1458-d00-7--100-388]-9618&alias=bigbird09.cern.ch&noUDP&sock=schedd_1852_e57c_15>
+...
+040 (6037101.409.000) 09/15 19:18:11 Started transferring input files
+	Transferring to host: <128.142.116.214:9618?addrs=128.142.116.214-9618+[2001-1458-301-ae--100-5d7]-9618&noUDP&sock=2942_a7b1_24602>
+...
+040 (6037101.409.000) 09/15 19:18:11 Finished transferring input files
+...
+001 (6037101.409.000) 09/15 19:18:12 Job executing on host: <128.142.116.214:9618?addrs=128.142.116.214-9618+[2001-1458-301-ae--100-5d7]-9618&noUDP&sock=2846_0307_3>
+...
+006 (6037101.409.000) 09/15 19:18:20 Image size of job updated: 194900
+	96  -  MemoryUsage of job (MB)
+	97776  -  ResidentSetSize of job (KB)
+...
+006 (6037101.409.000) 09/15 19:23:20 Image size of job updated: 549548
+	438  -  MemoryUsage of job (MB)
+	447828  -  ResidentSetSize of job (KB)
+...
+006 (6037101.409.000) 09/15 19:28:21 Image size of job updated: 565048
+	453  -  MemoryUsage of job (MB)
+	463316  -  ResidentSetSize of job (KB)
+...
+007 (6037101.409.000) 09/15 19:39:21 Shadow exception!
+	Assertion ERROR on (result)
+	0  -  Run Bytes Sent By Job
+	11389  -  Run Bytes Received By Job
+...
+040 (6037101.409.000) 09/15 19:49:51 Started transferring input files
+	Transferring to host: <128.142.117.122:9618?addrs=128.142.117.122-9618+[2001-1458-301-ae--100-54d]-9618&noUDP&sock=2912_846f_26702>
+...
+040 (6037101.409.000) 09/15 19:49:52 Finished transferring input files
+...
+001 (6037101.409.000) 09/15 19:49:52 Job executing on host: <128.142.117.122:9618?addrs=128.142.117.122-9618+[2001-1458-301-ae--100-54d]-9618&noUDP&sock=2813_2544_3>
+...
+006 (6037101.409.000) 09/15 19:50:01 Image size of job updated: 194476
+	96  -  MemoryUsage of job (MB)
+	97852  -  ResidentSetSize of job (KB)
+...
+006 (6037101.409.000) 09/15 19:55:01 Image size of job updated: 530508
+	430  -  MemoryUsage of job (MB)
+	439956  -  ResidentSetSize of job (KB)
+...
+006 (6037101.409.000) 09/15 20:00:01 Image size of job updated: 546648
+	446  -  MemoryUsage of job (MB)
+	456096  -  ResidentSetSize of job (KB)
+...
+006 (6037101.409.000) 09/15 20:05:02 Image size of job updated: 546648
+	446  -  MemoryUsage of job (MB)
+	456124  -  ResidentSetSize of job (KB)
+...
+006 (6037101.409.000) 09/15 20:10:03 Image size of job updated: 565924
+	465  -  MemoryUsage of job (MB)
+	475372  -  ResidentSetSize of job (KB)
+...
+006 (6037101.409.000) 09/15 20:40:05 Image size of job updated: 568560
+	467  -  MemoryUsage of job (MB)
+	478008  -  ResidentSetSize of job (KB)
+...
+006 (6037101.409.000) 09/15 20:45:06 Image size of job updated: 568560
+	467  -  MemoryUsage of job (MB)
+	478012  -  ResidentSetSize of job (KB)
+...
+040 (6037101.409.000) 09/15 20:49:33 Started transferring output files
+...
+040 (6037101.409.000) 09/15 20:49:33 Finished transferring output files
+...
+005 (6037101.409.000) 09/15 20:49:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:58:40, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:58:40, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	56851  -  Run Bytes Sent By Job
+	11389  -  Run Bytes Received By Job
+	56851  -  Total Bytes Sent By Job
+	22778  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :   126           1    210802 
+	   Memory (MB)          :   467        2000      2000 
+...

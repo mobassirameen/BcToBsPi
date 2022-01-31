@@ -1,0 +1,18 @@
+Executable = dummy_exec.sh
+use_x509userproxy = true
+getenv      = True
+Log        = submission_gdrCollective/log_running1_$(ProcId).log
+Output     = submission_gdrCollective/log_running1_$(ProcId).out
+Error      = submission_gdrCollective/log_running1_$(ProcId).error
+
+requirements = (OpSysAndVer =?= "SLCern6")
+
+environment = "LS_SUBCWD=/afs/cern.ch/work/o/osuranyi/public/CMSSW_7_5_0/src"
+
++JobFlavour  = "workday"
+
+arguments = /afs/cern.ch/work/o/osuranyi/public/CMSSW_7_5_0/src /afs/cern.ch/work/o/osuranyi/public/CMSSW_7_5_0/src/ZDC_Simulation_7_5_0-master/zdcSimAnalyzer/test/simulate_gdrCollective.py
+
+queue 
+
+
