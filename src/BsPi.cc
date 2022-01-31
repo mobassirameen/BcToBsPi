@@ -13,7 +13,7 @@
 #include <memory>
 
 // user include files
-#include "myAnalyzers/JPsiKsPAT/src/BsPi.h"
+#include "myAnalyzers/BsPiPAT/src/BsPi.h"
 
 #include "FWCore/Framework/interface/Frameworkfwd.h"
 #include "FWCore/Framework/interface/EDAnalyzer.h"
