@@ -125,6 +125,8 @@ private:
   unsigned int             nB;
   unsigned int             nMu;
   
+  std::vector<float>       *Bc_mass;
+
   std::vector<float>       *B_mass, *B_px, *B_py, *B_pz;
   
   std::vector<float>       *B_phi_mass;

@@ -114,6 +114,7 @@ BsPi::BsPi(const edm::ParameterSet& iConfig)
   // *******************************************************
   
   nB(0), nMu(0),
+  Bc_mass(0),
   B_mass(0), B_px(0), B_py(0), B_pz(0),
 
   B_phi_mass(0), 
@@ -420,6 +421,81 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 		       continue;
 		     }
 		   
+                   // Let's look for pion candidate
+                   // ####################################################################################################
+
+		   for(View<pat::PackedCandidate>::const_iterator pTrack = thePATTrackHandle->begin();
+			    pTrack != thePATTrackHandle->end(); ++pTrack )
+			    {  // I did not close this brcket till now.
+                   
+			    if(pTrack==iTrack1) continue;
+			    if(pTrack==iTrack2) continue;
+			    if(pTrack->charge()==0) continue;
+                            if(fabs(pTrack->pdgId()!=211)) continue;
+			    if(pTrack->pt()<1.3) continue;
+			    if(!(pTrack->trackHighPurity())) continue;
+			    
+			    //Now let's checks if our muons do not use the same tracks as we are using now for pion track  
+			    if ( IsTheSame(*pTrack,*iMuon1) || IsTheSame(*pTrack,*iMuon2) ) continue;
+
+			    reco::TransientTrack pionTT((*theB).build(pTrack->pseudoTrack()));
+
+			    ParticleMass bs_mass = 5.36688;
+			    ParticleMass pion_mass = 0.13957018;
+			    //float bs_sigma = bs_mass*1.e-6;
+			    float pion_sigma = pion_mass*1.e-6;
+
+			    float chi = 0.;			    
+			    float ndf = 0.;			    
+			    
+                            // *********************************
+
+                            // BsPi invariant mass (before kinematic vertex fit)
+
+                            // *********************************
+                            TLorentzVector pion4V;
+			    pion4V.SetXYZM(pTrack->px(),pTrack->py(),pTrack->pz(),pion_mass);
+			     
+                            if ( (pipi4V + Jpsi4V + pion4V).M()<5.7 || (pipi4V + Jpsi4V + pion4V).M()>6.8 ) continue;
+
+			    // Now we are ready to combine!
+                            vector<RefCountedKinematicParticle> bcFitMCParticles;
+                            bcFitMCParticles.push_back(pFactory.particle(pionTT,pion_mass,chi,ndf,pion_sigma));
+
+	                    // pion mass constraint is applied in the final Bc fit 
+		            //MultiTrackKinematicConstraint *  b_s = new  TwoTrackMassKinematicConstraint(bs_mass);
+		            MultiTrackKinematicConstraint *  b_s = new  TwoTrackMassKinematicConstraint(bs_mass);
+                            KinematicConstrainedVertexFitter pcvFitter;
+                            RefCountedKinematicTree bcvertexFitTree = pcvFitter.fit(vFitMCParticles, b_s);
+
+			    if (!bcvertexFitTree->isValid()) {
+	                     //std::cout << "caught an exception in the Bc vertex fit with MC" << std::endl;
+			     continue;
+                            }
+
+			    bcvertexFitTree->movePointerToTheTop();
+                            RefCountedKinematicParticle bcCandMC = bcvertexFitTree->currentParticle();
+                            RefCountedKinematicVertex bcDecayVertexMC = bcvertexFitTree->currentDecayVertex();
+
+			    if (!bcDecayVertexMC->vertexIsValid()){
+                     	     //std::cout << "Bc MC fit vertex is not valid" << endl;
+                     	     continue;
+			    }
+
+			    if(bcCandMC->currentState().mass()<5.7 || bCandMC->currentState().mass()>6.8) continue;
+
+			    if (bcDecayVertexMC->chiSquared()<0 || bcDecayVertexMC->chiSquared()>50 ){
+                             //std::cout << " continue from negative chi2 = " << bDecayVertexMC->chiSquared() << endl;
+                             continue;
+			    }
+
+		            double Bc_Prob_tmp  = TMath::Prob(bcDecayVertexMC->chiSquared(),(int)bcDecayVertexMC->degreesOfFreedom());
+                   	    if(Bc_Prob_tmp<0.01){
+                                continue;
+                            }  
+			
+                   // ####################################################################################################
+		   
 		   // get children from final B fit
 
 		   vertexFitTree->movePointerToTheFirstChild();
@@ -434,11 +510,16 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
                    vertexFitTree->movePointerToTheNextChild();
                    RefCountedKinematicParticle T2CandMC = vertexFitTree->currentParticle();
 
+		   bcvertexFitTree->movePointerToTheFirstChild();
+		   RefCountedKinematicParticle T3CandMC = bcvertexFitTree->currentParticle();
+
 		   KinematicParameters psiMu1KP = mu1CandMC->currentState().kinematicParameters();
 		   KinematicParameters psiMu2KP = mu2CandMC->currentState().kinematicParameters();		   
 
 		   KinematicParameters phiPi1KP = T1CandMC->currentState().kinematicParameters();
 		   KinematicParameters phiPi2KP = T2CandMC->currentState().kinematicParameters();
+
+		   //KinematicParameters bcPi1P = T3CandMC->currentState().kinematicParameters();
 
 		   const reco::Muon *recoMuonM = patMuonM;
 		   const reco::Muon *recoMuonP = patMuonP;
@@ -449,6 +530,8 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 		     nMu  = nMu_tmp;
 		     // cout<< "*Number of Muons : " << nMu_tmp << endl;
 		   } // end nB==0
+
+		   Bc_mass->push_back(bcCandMC->currentState().mass());		
 
 		   B_mass->push_back(bCandMC->currentState().mass());
 		   B_px->push_back(bCandMC->currentState().globalMomentum().x());
@@ -573,6 +656,7 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 		   //pionParticles.clear();
 		   muonParticles.clear();
 		   vFitMCParticles.clear();
+		   }
 
 		 }
 	     }
@@ -591,6 +675,7 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
    //triggersL = 0; 
 
+   Bc_mass->clear();
 
    B_mass->clear();    B_px->clear();    B_py->clear();    B_pz->clear();
    B_phi_mass->clear(); 
@@ -650,10 +735,13 @@ BsPi::beginJob()
   std::cout << "Beginning analyzer job with value of isMC_ = " << isMC_ << std::endl;
 
   edm::Service<TFileService> fs;
-  tree_ = fs->make<TTree>("ntuple","Bs->J/psi phi ntuple");
+  //tree_ = fs->make<TTree>("ntuple","Bs->J/psi phi ntuple");
+  tree_ = fs->make<TTree>("ntuple","Bc->BsPi ntuple");
 
   tree_->Branch("nB",&nB,"nB/i");
   tree_->Branch("nMu",&nMu,"nMu/i");
+
+  tree_->Branch("Bc_mass", &Bc_mass);
 
   tree_->Branch("B_mass", &B_mass);
   tree_->Branch("B_px", &B_px);
