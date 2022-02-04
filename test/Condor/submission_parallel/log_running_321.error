@@ -1,0 +1,8 @@
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 at 15-Sep-2020 19:18:24.800 CEST
+terminate called after throwing an instance of 'cms::Exception'
+  what():  An exception of category 'FileFlushError' occurred while
+   [0] Calling File::flush()
+Exception Message:
+fdatasync() failed with system error 'Input/output error' (error code 5)
+
+condor_exec.exe: line 43:    96 Aborted                 (core dumped) cmsRun $2

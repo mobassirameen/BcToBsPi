@@ -1,0 +1,1512 @@
+Executable = dummy_exec.sh
+use_x509userproxy = True
+getenv      = True
+Log        = submission_onlyCA/log_running_$(ProcId).log
+Output     = submission_onlyCA/log_running_$(ProcId).out
+Error      = submission_onlyCA/log_running_$(ProcId).error
+
+requirements = (OpSysAndVer =?= "SLCern6")
+
+environment = "LS_SUBCWD=/afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor"
++MaxRuntime = 14000 
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_1.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_2.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_3.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_4.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_5.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_6.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_7.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_8.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_9.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_10.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_11.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_12.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_13.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_14.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_15.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_16.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_17.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_18.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_19.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_20.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_21.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_22.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_23.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_24.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_25.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_26.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_27.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_28.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_29.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_30.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_31.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_32.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_33.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_34.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_35.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_36.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_37.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_38.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_39.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_40.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_41.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_42.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_43.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_44.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_45.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_46.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_47.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_48.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_49.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_50.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_51.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_52.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_53.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_54.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_55.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_56.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_57.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_58.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_59.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_60.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_61.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_62.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_63.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_64.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_65.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_66.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_67.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_68.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_69.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_70.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_71.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_72.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_73.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_74.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_75.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_76.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_77.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_78.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_79.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_80.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_81.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_82.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_83.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_84.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_85.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_86.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_87.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_88.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_89.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_90.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_91.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_92.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_93.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_94.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_95.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_96.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_97.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_98.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_99.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_100.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_101.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_102.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_103.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_104.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_105.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_106.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_107.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_108.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_109.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_110.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_111.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_112.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_113.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_114.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_115.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_116.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_117.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_118.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_119.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_120.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_121.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_122.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_123.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_124.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_125.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_126.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_127.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_128.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_129.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_130.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_131.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_132.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_133.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_134.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_135.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_136.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_137.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_138.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_139.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_140.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_141.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_142.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_143.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_144.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_145.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_146.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_147.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_148.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_149.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_150.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_151.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_152.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_153.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_154.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_155.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_156.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_157.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_158.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_159.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_160.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_161.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_162.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_163.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_164.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_165.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_166.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_167.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_168.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_169.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_170.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_171.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_172.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_173.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_174.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_175.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_176.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_177.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_178.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_179.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_180.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_181.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_182.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_183.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_184.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_185.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_186.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_187.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_188.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_189.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_190.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_191.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_192.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_193.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_194.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_195.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_196.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_197.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_198.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_199.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_200.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_201.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_202.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_203.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_204.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_205.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_206.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_207.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_208.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_209.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_210.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_211.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_212.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_213.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_214.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_215.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_216.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_217.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_218.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_219.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_220.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_221.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_222.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_223.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_224.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_225.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_226.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_227.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_228.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_229.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_230.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_231.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_232.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_233.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_234.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_235.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_236.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_237.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_238.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_239.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_240.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_241.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_242.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_243.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_244.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_245.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_246.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_247.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_248.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_249.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_250.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_251.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_252.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_253.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_254.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_255.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_256.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_257.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_258.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_259.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_260.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_261.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_262.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_263.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_264.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_265.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_266.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_267.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_268.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_269.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_270.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_271.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_272.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_273.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_274.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_275.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_276.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_277.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_278.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_279.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_280.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_281.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_282.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_283.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_284.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_285.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_286.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_287.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_288.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_289.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_290.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_291.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_292.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_293.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_294.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_295.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_296.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_297.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_298.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_299.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_300.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_301.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_302.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_303.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_304.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_305.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_306.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_307.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_308.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_309.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_310.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_311.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_312.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_313.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_314.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_315.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_316.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_317.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_318.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_319.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_320.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_321.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_322.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_323.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_324.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_325.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_326.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_327.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_328.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_329.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_330.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_331.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_332.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_333.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_334.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_335.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_336.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_337.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_338.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_339.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_340.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_341.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_342.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_343.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_344.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_345.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_346.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_347.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_348.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_349.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_350.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_351.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_352.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_353.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_354.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_355.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_356.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_357.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_358.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_359.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_360.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_361.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_362.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_363.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_364.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_365.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_366.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_367.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_368.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_369.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_370.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_371.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_372.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_373.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_374.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_375.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_376.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_377.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_378.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_379.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_380.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_381.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_382.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_383.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_384.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_385.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_386.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_387.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_388.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_389.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_390.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_391.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_392.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_393.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_394.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_395.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_396.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_397.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_398.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_399.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_400.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_401.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_402.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_403.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_404.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_405.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_406.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_407.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_408.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_409.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_410.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_411.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_412.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_413.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_414.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_415.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_416.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_417.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_418.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_419.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_420.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_421.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_422.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_423.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_424.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_425.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_426.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_427.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_428.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_429.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_430.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_431.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_432.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_433.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_434.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_435.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_436.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_437.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_438.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_439.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_440.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_441.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_442.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_443.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_444.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_445.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_446.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_447.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_448.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_449.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_450.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_451.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_452.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_453.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_454.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_455.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_456.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_457.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_458.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_459.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_460.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_461.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_462.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_463.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_464.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_465.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_466.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_467.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_468.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_469.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_470.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_471.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_472.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_473.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_474.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_475.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_476.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_477.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_478.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_479.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_480.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_481.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_482.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_483.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_484.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_485.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_486.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_487.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_488.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_489.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_490.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_491.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_492.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_493.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_494.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_495.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_496.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_497.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_498.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_499.py $(ClusterId) $(ProcId)
+queue 1
+
+arguments = /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor /afs/cern.ch/user/m/moameen/Workspace/BcToBsPi-Analysis/CMSSW_10_2_5/src/myAnalyzers/BsPiPAT/test/Condor/submission_onlyCA/simulate_500.py $(ClusterId) $(ProcId)
+queue 1
+

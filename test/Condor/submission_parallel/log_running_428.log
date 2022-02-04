@@ -1,0 +1,96 @@
+000 (6037101.428.000) 09/15 19:00:56 Job submitted from host: <188.185.71.142:9618?addrs=188.185.71.142-9618+[2001-1458-d00-7--100-388]-9618&alias=bigbird09.cern.ch&noUDP&sock=schedd_1852_e57c_15>
+...
+040 (6037101.428.000) 09/15 19:18:19 Started transferring input files
+	Transferring to host: <128.142.118.233:9618?addrs=128.142.118.233-9618+[2001-1458-301-ae--100-e6]-9618&noUDP&sock=2914_ed30_26836>
+...
+040 (6037101.428.000) 09/15 19:18:19 Finished transferring input files
+...
+001 (6037101.428.000) 09/15 19:18:20 Job executing on host: <128.142.118.233:9618?addrs=128.142.118.233-9618+[2001-1458-301-ae--100-e6]-9618&noUDP&sock=2816_6f30_3>
+...
+006 (6037101.428.000) 09/15 19:18:28 Image size of job updated: 194932
+	96  -  MemoryUsage of job (MB)
+	97808  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 19:23:28 Image size of job updated: 544884
+	433  -  MemoryUsage of job (MB)
+	442968  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 19:28:29 Image size of job updated: 555140
+	443  -  MemoryUsage of job (MB)
+	453216  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 19:39:24 Image size of job updated: 563688
+	451  -  MemoryUsage of job (MB)
+	461760  -  ResidentSetSize of job (KB)
+...
+007 (6037101.428.000) 09/15 19:39:24 Shadow exception!
+	Assertion ERROR on (result)
+	0  -  Run Bytes Sent By Job
+	11389  -  Run Bytes Received By Job
+...
+040 (6037101.428.000) 09/15 19:49:53 Started transferring input files
+	Transferring to host: <128.142.119.155:9618?addrs=128.142.119.155-9618+[2001-1458-301-ae--100-53d]-9618&noUDP&sock=23125_6785_5641>
+...
+040 (6037101.428.000) 09/15 19:49:53 Finished transferring input files
+...
+001 (6037101.428.000) 09/15 19:49:54 Job executing on host: <128.142.119.155:9618?addrs=128.142.119.155-9618+[2001-1458-301-ae--100-53d]-9618&noUDP&sock=2923_836b_66>
+...
+006 (6037101.428.000) 09/15 19:50:03 Image size of job updated: 194692
+	96  -  MemoryUsage of job (MB)
+	97804  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 19:55:04 Image size of job updated: 527796
+	428  -  MemoryUsage of job (MB)
+	437984  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 20:00:05 Image size of job updated: 547232
+	447  -  MemoryUsage of job (MB)
+	457420  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 20:05:05 Image size of job updated: 553708
+	454  -  MemoryUsage of job (MB)
+	463896  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 20:10:05 Image size of job updated: 556268
+	456  -  MemoryUsage of job (MB)
+	466456  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 20:20:07 Image size of job updated: 559160
+	459  -  MemoryUsage of job (MB)
+	469348  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 20:25:07 Image size of job updated: 564276
+	464  -  MemoryUsage of job (MB)
+	474464  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 20:30:07 Image size of job updated: 564276
+	464  -  MemoryUsage of job (MB)
+	474472  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 20:35:08 Image size of job updated: 565868
+	465  -  MemoryUsage of job (MB)
+	476056  -  ResidentSetSize of job (KB)
+...
+006 (6037101.428.000) 09/15 20:45:09 Image size of job updated: 567924
+	467  -  MemoryUsage of job (MB)
+	478112  -  ResidentSetSize of job (KB)
+...
+040 (6037101.428.000) 09/15 20:49:49 Started transferring output files
+...
+040 (6037101.428.000) 09/15 20:49:49 Finished transferring output files
+...
+005 (6037101.428.000) 09/15 20:49:49 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:58:59, Sys 0 00:00:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:58:59, Sys 0 00:00:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	56848  -  Run Bytes Sent By Job
+	11389  -  Run Bytes Received By Job
+	56848  -  Total Bytes Sent By Job
+	22778  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :   126           1    214676 
+	   Memory (MB)          :   467        2000      2000 
+...

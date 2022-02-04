@@ -1,0 +1,96 @@
+000 (6201460.485.000) 10/07 12:29:00 Job submitted from host: <188.185.71.142:9618?addrs=188.185.71.142-9618+[2001-1458-d00-7--100-388]-9618&alias=bigbird09.cern.ch&noUDP&sock=schedd_1971_8541_3>
+...
+040 (6201460.485.000) 10/07 12:53:17 Started transferring input files
+	Transferring to host: <128.142.117.16:9618?addrs=128.142.117.16-9618+[2001-1458-301-ae--100-1b2]-9618&noUDP&sock=11099_ffdc_62641>
+...
+040 (6201460.485.000) 10/07 12:53:17 Finished transferring input files
+...
+001 (6201460.485.000) 10/07 12:53:18 Job executing on host: <128.142.117.16:9618?addrs=128.142.117.16-9618+[2001-1458-301-ae--100-1b2]-9618&noUDP&sock=2807_f26e_3>
+...
+006 (6201460.485.000) 10/07 12:53:27 Image size of job updated: 132952
+	114  -  MemoryUsage of job (MB)
+	115960  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 12:58:28 Image size of job updated: 417436
+	407  -  MemoryUsage of job (MB)
+	416696  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:03:28 Image size of job updated: 443048
+	432  -  MemoryUsage of job (MB)
+	442308  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:08:29 Image size of job updated: 448644
+	438  -  MemoryUsage of job (MB)
+	447904  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:13:30 Image size of job updated: 448644
+	438  -  MemoryUsage of job (MB)
+	447912  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:18:30 Image size of job updated: 449844
+	439  -  MemoryUsage of job (MB)
+	449100  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:23:31 Image size of job updated: 450928
+	440  -  MemoryUsage of job (MB)
+	450184  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:28:32 Image size of job updated: 450928
+	440  -  MemoryUsage of job (MB)
+	450188  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:38:33 Image size of job updated: 453508
+	443  -  MemoryUsage of job (MB)
+	452764  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:43:34 Image size of job updated: 463948
+	453  -  MemoryUsage of job (MB)
+	463204  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:48:34 Image size of job updated: 463948
+	453  -  MemoryUsage of job (MB)
+	463208  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:53:35 Image size of job updated: 465984
+	455  -  MemoryUsage of job (MB)
+	465240  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 13:58:36 Image size of job updated: 466336
+	455  -  MemoryUsage of job (MB)
+	465592  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 14:23:39 Image size of job updated: 469000
+	458  -  MemoryUsage of job (MB)
+	468256  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 14:28:40 Image size of job updated: 469488
+	458  -  MemoryUsage of job (MB)
+	468744  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 14:43:42 Image size of job updated: 470744
+	459  -  MemoryUsage of job (MB)
+	470000  -  ResidentSetSize of job (KB)
+...
+006 (6201460.485.000) 10/07 14:48:42 Image size of job updated: 481156
+	470  -  MemoryUsage of job (MB)
+	480412  -  ResidentSetSize of job (KB)
+...
+040 (6201460.485.000) 10/07 14:59:46 Started transferring output files
+...
+040 (6201460.485.000) 10/07 14:59:46 Finished transferring output files
+...
+005 (6201460.485.000) 10/07 14:59:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 02:04:43, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 02:04:43, Sys 0 00:00:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	56868  -  Run Bytes Sent By Job
+	11401  -  Run Bytes Received By Job
+	56868  -  Total Bytes Sent By Job
+	11401  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :    91           1    210451 
+	   Memory (MB)          :   470        2000      2000 
+...
