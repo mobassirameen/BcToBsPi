@@ -2,7 +2,7 @@ from WMCore.Configuration import Configuration
 config = Configuration()
 
 config.section_("General")
-config.General.requestName = 'BcToBsPi_analysis_v1'
+config.General.requestName = 'BcToBsPi_analysis_BcMass'
 config.General.workArea = 'crab_projects'
 
 config.section_("JobType")
