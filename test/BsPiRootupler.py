@@ -11,11 +11,11 @@ process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_data')
 #process.GlobalTag = GlobalTag(process.GlobalTag, '102X_upgrade2018_realistic_v11', '')
 #process.GlobalTag = GlobalTag(process.GlobalTag, '94X_dataRun2_ReReco_EOY17_v1', '')
 
-process.MessageLogger.cerr.FwkReport.reportEvery = 1000
+#process.MessageLogger.cerr.FwkReport.reportEvery = 1000
 process.options = cms.untracked.PSet( wantSummary = cms.untracked.bool(True) )
 process.options.allowUnscheduled = cms.untracked.bool(True)
 #process.load("FWCore.MessageLogger.MessageLogger_cfi")
-process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(10000))
+process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(1000))
 #process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(-1))
 process.source = cms.Source("PoolSource",
     fileNames = cms.untracked.vstring(
@@ -25,10 +25,11 @@ process.source = cms.Source("PoolSource",
 #MiniAOD
 #dataset=/Charmonium/Run2018C-PromptReco-v2/MINIAOD
 '/store/data/Run2018C/Charmonium/MINIAOD/PromptReco-v2/000/319/756/00000/EEF6CEC1-698B-E811-8081-02163E00AF5F.root',
+#'/store/data/Run2018C/Charmonium/MINIAOD/PromptReco-v2/000/319/449/00000/1207BFAA-0786-E811-A7F2-FA163E2F22C2.root',
 #dataset=/BcToBsPi_JpsiPhiPi_MuMuKKPi_JpsiPhiFilter_TuneCP5_13TeV-bcvegpy2-pythia8-evtgen/RunIIFall18pLHE-102X_upgrade2018_realistic_v11-v1/LHE
 #'/store/mc/RunIIFall18pLHE/BcToBsPi_JpsiPhiPi_MuMuKKPi_JpsiPhiFilter_TuneCP5_13TeV-bcvegpy2-pythia8-evtgen/LHE/102X_upgrade2018_realistic_v11-v1/90000/57FBC897-4DE6-184A-9883-40427098651E.root'
 #dataset=/BcToBsPi_JpsiPhiPi_MuMuKKPi_JpsiPhiFilter_TuneCP5_13TeV-bcvegpy2-pythia8-evtgen/RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v1/MINIAODSIM
-#'/store/mc/RunIIAutumn18MiniAOD/BcToBsPi_JpsiPhiPi_MuMuKKPi_JpsiPhiFilter_TuneCP5_13TeV-bcvegpy2-pythia8-evtgen/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/4E457795-DA2E-7340-9F04-9FD229FE5465.root'
+#'/store/mc/RunIIAutumn18MiniAOD/BcToBsPi_JpsiPhiPi_MuMuKKPi_JpsiPhiFilter_TuneCP5_13TeV-bcvegpy2-pythia8-evtgen/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/4E457795-DA2E-7340-9F04-9FD229FE5465.root',
 #'file:root://cms-xrd-global.cern.ch//store/mc/RunIIAutumn18MiniAOD/BcToBsPi_JpsiPhiPi_MuMuKKPi_JpsiPhiFilter_TuneCP5_13TeV-bcvegpy2-pythia8-evtgen/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/110000/4E457795-DA2E-7340-9F04-9FD229FE5465.root'
         
  )
@@ -71,7 +72,3 @@ process.mySequence = cms.Sequence(
 
 process.p = cms.Path(process.triggerSelection*process.slimmedMuonsWithTriggerSequence*process.rootuple)
 #process.p = cms.Path(process.rootuple)
-
-
-
-
