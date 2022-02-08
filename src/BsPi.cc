@@ -94,6 +94,7 @@ BsPi::BsPi(const edm::ParameterSet& iConfig)
   primaryVertices_Label(consumes<reco::VertexCollection>(iConfig.getParameter<edm::InputTag>("primaryVertices"))),
   triggerResults_Label(consumes<edm::TriggerResults>(iConfig.getParameter<edm::InputTag>("TriggerResults"))),
   BSLabel_(consumes<reco::BeamSpot>(iConfig.getParameter<edm::InputTag>("bslabel"))),
+  v0PtrCollection_(consumes<reco::VertexCompositePtrCandidateCollection>(iConfig.getParameter<edm::InputTag>("secundaryVerticesPtr"))),	
 
   OnlyBest_(iConfig.getParameter<bool>("OnlyBest")),
   isMC_(iConfig.getParameter<bool>("isMC")),
@@ -101,7 +102,7 @@ BsPi::BsPi(const edm::ParameterSet& iConfig)
 
   tree_(0), 
 
-  mumC2(0), mumAngT(0), mumNHits(0), mumNPHits(0),
+  mumC2(0), mumAngT(0), mumNHits(0), mumNPHits(0), BSINDEX(0),
   mupC2(0), mupAngT(0), mupNHits(0), mupNPHits(0),
   mumdxy(0), mupdxy(0), mumdz(0), mupdz(0),
   muon_dca(0),
@@ -114,7 +115,7 @@ BsPi::BsPi(const edm::ParameterSet& iConfig)
   // *******************************************************
   
   nB(0), nMu(0),
-  Bc_mass(0),
+  Bspion_mass_vertex(0), Bspion_mass(0),
   B_mass(0), B_px(0), B_py(0), B_pz(0),
 
   B_phi_mass(0), 
@@ -139,6 +140,8 @@ BsPi::BsPi(const edm::ParameterSet& iConfig)
   nVtx(0),
   priVtxX(0), priVtxY(0), priVtxZ(0), priVtxXE(0), priVtxYE(0), priVtxZE(0), priVtxCL(0),
   priVtxXYE(0), priVtxXZE(0), priVtxYZE(0),
+
+  pion_PV(0),
   
   // ************************ ****************************************************
 
@@ -174,8 +177,13 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
   //*********************************
   // Get event content information
   //*********************************  
+  edm::Handle<std::vector<reco::VertexCompositePtrCandidate>> theV0PtrHandle;
+  iEvent.getByToken(v0PtrCollection_,  theV0PtrHandle);
 
- // Kinematic fit
+  ESHandle<MagneticField> bFieldHandle;
+  iSetup.get<IdealMagneticFieldRecord>().get(bFieldHandle);
+
+  // Kinematic fit
   edm::ESHandle<TransientTrackBuilder> theB; 
   iSetup.get<TransientTrackRecord>().get("TransientTrackBuilder",theB); 
 
@@ -275,6 +283,7 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
 	  //Creating a KinematicParticleFactory
 	  KinematicParticleFactoryFromTransientTrack pFactory;
+	  VirtualKinematicParticleFactory vFactory;
 	  
 	  //initial chi2 and ndf before kinematic fits.
 	  float chi = 0.;
@@ -362,6 +371,8 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 		   ParticleMass kaon_mass = 0.493677;
 		   float kaon_sigma = kaon_mass*1.e-6;
 
+		   ParticleMass bs_mass = 5.36679;
+
 		   // ***************************
 		   // pipi invariant mass (before kinematic vertex fit)
 		   // ***************************
@@ -421,81 +432,6 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 		       continue;
 		     }
 		   
-                   // Let's look for pion candidate
-                   // ####################################################################################################
-
-		   for(View<pat::PackedCandidate>::const_iterator pTrack = thePATTrackHandle->begin();
-			    pTrack != thePATTrackHandle->end(); ++pTrack )
-			    {  // I did not close this brcket till now.
-                   
-			    if(pTrack==iTrack1) continue;
-			    if(pTrack==iTrack2) continue;
-			    if(pTrack->charge()==0) continue;
-                            if(fabs(pTrack->pdgId()!=211)) continue;
-			    if(pTrack->pt()<1.3) continue;
-			    if(!(pTrack->trackHighPurity())) continue;
-			    
-			    //Now let's checks if our muons do not use the same tracks as we are using now for pion track  
-			    if ( IsTheSame(*pTrack,*iMuon1) || IsTheSame(*pTrack,*iMuon2) ) continue;
-
-			    reco::TransientTrack pionTT((*theB).build(pTrack->pseudoTrack()));
-
-			    ParticleMass bs_mass = 5.36688;
-			    ParticleMass pion_mass = 0.13957018;
-			    //float bs_sigma = bs_mass*1.e-6;
-			    float pion_sigma = pion_mass*1.e-6;
-
-			    float chi = 0.;			    
-			    float ndf = 0.;			    
-			    
-                            // *********************************
-
-                            // BsPi invariant mass (before kinematic vertex fit)
-
-                            // *********************************
-                            TLorentzVector pion4V;
-			    pion4V.SetXYZM(pTrack->px(),pTrack->py(),pTrack->pz(),pion_mass);
-			     
-                            if ( (pipi4V + Jpsi4V + pion4V).M()<5.7 || (pipi4V + Jpsi4V + pion4V).M()>6.8 ) continue;
-
-			    // Now we are ready to combine!
-                            vector<RefCountedKinematicParticle> bcFitMCParticles;
-                            bcFitMCParticles.push_back(pFactory.particle(pionTT,pion_mass,chi,ndf,pion_sigma));
-
-	                    // pion mass constraint is applied in the final Bc fit 
-		            //MultiTrackKinematicConstraint *  b_s = new  TwoTrackMassKinematicConstraint(bs_mass);
-		            MultiTrackKinematicConstraint *  b_s = new  TwoTrackMassKinematicConstraint(bs_mass);
-                            KinematicConstrainedVertexFitter pcvFitter;
-                            RefCountedKinematicTree bcvertexFitTree = pcvFitter.fit(vFitMCParticles, b_s);
-
-			    if (!bcvertexFitTree->isValid()) {
-	                     //std::cout << "caught an exception in the Bc vertex fit with MC" << std::endl;
-			     continue;
-                            }
-
-			    bcvertexFitTree->movePointerToTheTop();
-                            RefCountedKinematicParticle bcCandMC = bcvertexFitTree->currentParticle();
-                            RefCountedKinematicVertex bcDecayVertexMC = bcvertexFitTree->currentDecayVertex();
-
-			    if (!bcDecayVertexMC->vertexIsValid()){
-                     	     //std::cout << "Bc MC fit vertex is not valid" << endl;
-                     	     continue;
-			    }
-
-			    if(bcCandMC->currentState().mass()<5.7 || bCandMC->currentState().mass()>6.8) continue;
-
-			    if (bcDecayVertexMC->chiSquared()<0 || bcDecayVertexMC->chiSquared()>50 ){
-                             //std::cout << " continue from negative chi2 = " << bDecayVertexMC->chiSquared() << endl;
-                             continue;
-			    }
-
-		            double Bc_Prob_tmp  = TMath::Prob(bcDecayVertexMC->chiSquared(),(int)bcDecayVertexMC->degreesOfFreedom());
-                   	    if(Bc_Prob_tmp<0.01){
-                                continue;
-                            }  
-			
-                   // ####################################################################################################
-		   
 		   // get children from final B fit
 
 		   vertexFitTree->movePointerToTheFirstChild();
@@ -509,29 +445,41 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
                    vertexFitTree->movePointerToTheNextChild();
                    RefCountedKinematicParticle T2CandMC = vertexFitTree->currentParticle();
-
-		   bcvertexFitTree->movePointerToTheFirstChild();
-		   RefCountedKinematicParticle T3CandMC = bcvertexFitTree->currentParticle();
-
+		  
 		   KinematicParameters psiMu1KP = mu1CandMC->currentState().kinematicParameters();
 		   KinematicParameters psiMu2KP = mu2CandMC->currentState().kinematicParameters();		   
+		   KinematicParameters psiMupKP;		   
+		   KinematicParameters psiMumKP;		   
+
+		   if ( mu1CandMC->currentState().particleCharge() > 0 ) psiMupKP = psiMu1KP;
+		   if ( mu1CandMC->currentState().particleCharge() < 0 ) psiMumKP = psiMu1KP;
+		   if ( mu2CandMC->currentState().particleCharge() > 0 ) psiMupKP = psiMu2KP;
+		   if ( mu2CandMC->currentState().particleCharge() < 0 ) psiMumKP = psiMu2KP;
 
 		   KinematicParameters phiPi1KP = T1CandMC->currentState().kinematicParameters();
 		   KinematicParameters phiPi2KP = T2CandMC->currentState().kinematicParameters();
+		   KinematicParameters phiPipKP;
+		   KinematicParameters phiPimKP;
 
-		   //KinematicParameters bcPi1P = T3CandMC->currentState().kinematicParameters();
+		   if ( T1CandMC->currentState().particleCharge() > 0 ) phiPipKP = phiPi1KP;
+		   if ( T1CandMC->currentState().particleCharge() < 0 ) phiPimKP = phiPi1KP;
+		   if ( T2CandMC->currentState().particleCharge() > 0 ) phiPipKP = phiPi2KP;
+		   if ( T2CandMC->currentState().particleCharge() < 0 ) phiPimKP = phiPi2KP;
 
+		
 		   const reco::Muon *recoMuonM = patMuonM;
 		   const reco::Muon *recoMuonP = patMuonP;
+
+		   //mumME1Clean = HasGoodME11(*recoMuonM,2.);
+		   //mupME1Clean = HasGoodME11(*recoMuonP,2.);
+		   //************************************************************************************************************************
 		  		   		   	       
 		   // fill candidate variables now
 		   
 		   if(nB==0){
 		     nMu  = nMu_tmp;
-		     // cout<< "*Number of Muons : " << nMu_tmp << endl;
+		      cout<< "*Number of Muons : " << nMu_tmp << endl;
 		   } // end nB==0
-
-		   Bc_mass->push_back(bcCandMC->currentState().mass());		
 
 		   B_mass->push_back(bCandMC->currentState().mass());
 		   B_px->push_back(bCandMC->currentState().globalMomentum().x());
@@ -648,15 +596,117 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
 		   k1InnerHits->push_back(iTrack1->lostInnerHits());
 		   k2InnerHits->push_back(iTrack2->lostInnerHits());		   
+		   // 
+		   // *********************************************************************************************************
+		   double BSINDEX_tmp = B_mass->size();
+		   
+
+		   for(View<pat::PackedCandidate>::const_iterator pTrack = thePATTrackHandle->begin();
+		       pTrack != thePATTrackHandle->end(); ++pTrack )
+		     {
+		       if(pTrack==iTrack1 || pTrack==iTrack2) continue;
+		       if(pTrack->charge()==0) continue;
+		       if(fabs(pTrack->pdgId()!=211)) continue;
+		       if(pTrack->pt()<0.5) continue;
+		       if(!(pTrack->trackHighPurity())) continue;
+
+		       //Now let's checks if our muons do not use the same tracks as we are using now for pion track
+		       if ( IsTheSame(*pTrack,*iMuon1) || IsTheSame(*pTrack,*iMuon2) ) continue;
+
+		       reco::TransientTrack pionTT((*theB).build(pTrack->pseudoTrack()));
+
+ 
+			// first get track from the original primary
+			vector<reco::TransientTrack> vertexTrackspion;
+                        /*    
+			for ( std::vector<TrackBaseRef >::const_iterator iTrack = bestVtx.tracks_begin();
+			  iTrack != bestVtx.tracks_end(); ++iTrack) {
+			  // compareprimary track to check for matches with B cand 
+			  TrackRef trackRefpion = iTrack->castTo<TrackRef>();
+
+			  // the track in the PV must be pTrack
+			  if ( (pTrack == trackRefpion)){
+				TransientTrack tt(trackRefpion, &(*bFieldHandle));
+				vertexTrackspion.push_back(tt);
+			     }
+			 }
+                         */
+
+			// *********************
+			// Bc invariant mass
+			// *********************
+			//
+			ParticleMass pion_mass = 0.13957018;
+			float pion_sigma = pion_mass*1.e-6;
+
+			TLorentzVector Bs4V, pion4V, Bc4V;
+			
+			pion4V.SetXYZM(pTrack->px(),pTrack->py(),pTrack->pz(),pion_mass);
+			Bs4V.SetXYZM(bCandMC->currentState().globalMomentum().x(),bCandMC->currentState().globalMomentum().y(),bCandMC->currentState().globalMomentum().z(),bCandMC->currentState().mass());
+
+			Bc4V = pion4V + Bs4V;
+
+			if ((Bc4V.M() - Bs4V.M() + bs_mass < 5.7) || (Bc4V.M() - Bs4V.M() + bs_mass > 6.8)) continue;
+
+			// using VirtualKinematicParticleFactory vFactory for Bs
+			float Bs_dof = bDecayVertexMC->degreesOfFreedom();
+			float Bs_chi2 = bDecayVertexMC->chiSquared();
+
+			vector<RefCountedKinematicParticle> vFitMCParticlesBsPi;
+			vFitMCParticlesBsPi.push_back(vFactory.particle(bCandMC->currentState(),Bs_chi2,Bs_dof,bCandMC));
+			vFitMCParticlesBsPi.push_back(pFactory.particle(pionTT,pion_mass,chi,ndf,pion_sigma));
+
+			KinematicParticleVertexFitter kcvFitterBsPi;
+		        RefCountedKinematicTree vertexFitTreeBspi = kcvFitterBsPi.fit(vFitMCParticlesBsPi);	
+			if (!vertexFitTreeBspi->isValid()){
+				std::cout << "caught an exception in the B vertex fit with MC" << std::endl;
+				continue;			
+			}
+
+			vertexFitTreeBspi->movePointerToTheTop();
+			RefCountedKinematicParticle bspiCandMC = vertexFitTreeBspi->currentParticle();
+			RefCountedKinematicVertex bspiDecayVertexMC = vertexFitTreeBspi->currentDecayVertex();
+			if (!bspiDecayVertexMC->vertexIsValid()){
+				//std::cout << "B MC fit vertex is not valid" << endl;
+				continue;
+			}
+
+			if(bspiCandMC->currentState().mass()<5.7 || bspiCandMC->currentState().mass()>7.8) continue;
+			if(bspiDecayVertexMC->chiSquared()<0 || bspiDecayVertexMC->chiSquared()<500) continue;
+
+			// here end the Bspi vertex
+
+			vertexFitTreeBspi->movePointerToTheFirstChild();
+			RefCountedKinematicParticle BcCandfrombspi = vertexFitTreeBspi->currentParticle();
+
+			vertexFitTree->movePointerToTheNextChild();
+			RefCountedKinematicParticle pionCand = vertexFitTreeBspi->currentParticle();
+
+			BSINDEX->push_back(BSINDEX_tmp);
+
+			// save this pion_pv variable in order to know if pion track is or os not in primary vertex
+			if ( vertexTrackspion.size()!=0 ){
+				pion_PV->push_back(1);
+			}
+			else {
+				pion_PV->push_back(0);
+			}
+			
+			Bspion_mass_vertex->push_back(bspiCandMC->currentState().mass());
+
+			Bspion_mass->push_back( Bc4V.M() - Bs4V.M() + bs_mass );
+		   //************************************************************************************************************
+
 		  		 		   		   
 		   nB++;	       
 		   
 		   /////////////////////////////////////////////////
 		   
-		   //pionParticles.clear();
 		   muonParticles.clear();
 		   vFitMCParticles.clear();
-		   }
+		   vFitMCParticlesBsPi.clear();
+				   
+	           } 
 
 		 }
 	     }
@@ -666,7 +716,7 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
    //fill the tree and clear the vectors
    if (nB > 0 ) 
      {
-       //std::cout << "filling tree" << endl;
+       std::cout << "filling tree" << endl;
        tree_->Fill();
      }
    // *********
@@ -675,7 +725,8 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
    //triggersL = 0; 
 
-   Bc_mass->clear();
+   Bspion_mass_vertex->clear();
+   Bspion_mass->clear();
 
    B_mass->clear();    B_px->clear();    B_py->clear();    B_pz->clear();
    B_phi_mass->clear(); 
@@ -703,6 +754,9 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
    priVtxXE = 0;    priVtxYE = 0;    priVtxZE = 0; priVtxCL = 0;
    priVtxXYE = 0;   priVtxXZE = 0;   priVtxYZE = 0; 
 
+   pion_PV->clear();
+   BSINDEX->clear();
+
    k1dxy->clear(); k2dxy->clear(); k1dz->clear(); k2dz->clear();
    k1dxy_e->clear(); k2dxy_e->clear(); k1dz_e->clear(); k2dz_e->clear();
    k1InnerHits->clear(); k2InnerHits->clear(); 
@@ -717,7 +771,6 @@ void BsPi::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
 
    mu1soft->clear(); mu2soft->clear(); mu1tight->clear(); mu2tight->clear();
    mu1PF->clear(); mu2PF->clear(); mu1loose->clear(); mu2loose->clear(); 
- 
 }
 
 bool BsPi::IsTheSame(const pat::GenericParticle& tk, const pat::Muon& mu){
@@ -741,7 +794,8 @@ BsPi::beginJob()
   tree_->Branch("nB",&nB,"nB/i");
   tree_->Branch("nMu",&nMu,"nMu/i");
 
-  tree_->Branch("Bc_mass", &Bc_mass);
+  tree_->Branch("Bspion_mass_vertex", &Bspion_mass_vertex);
+  tree_->Branch("Bspion_mass", &Bspion_mass);
 
   tree_->Branch("B_mass", &B_mass);
   tree_->Branch("B_px", &B_px);
@@ -807,6 +861,8 @@ BsPi::beginJob()
   tree_->Branch("priVtxXZE",&priVtxXZE, "priVtxXZE/f");
   tree_->Branch("priVtxYZE",&priVtxYZE, "priVtxYZE/f");
   tree_->Branch("priVtxCL",&priVtxCL, "priVtxCL/f");
+
+  tree_->Branch("pion_PV",&pion_PV);
   
   tree_->Branch("nVtx",       &nVtx);
   tree_->Branch("run",        &run,       "run/I");
@@ -832,6 +888,7 @@ BsPi::beginJob()
   tree_->Branch("mumAngT",&mumAngT);
   tree_->Branch("mumNHits",&mumNHits);
   tree_->Branch("mumNPHits",&mumNPHits);
+  tree_->Branch("BSINDEX",&BSINDEX);
   tree_->Branch("mupC2",&mupC2);  
   tree_->Branch("mupAngT",&mupAngT);
   tree_->Branch("mupNHits",&mupNHits);
