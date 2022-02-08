@@ -93,6 +93,7 @@ private:
   edm::EDGetTokenT<reco::VertexCollection> primaryVertices_Label;
   edm::EDGetTokenT<edm::TriggerResults> triggerResults_Label;
   edm::EDGetTokenT<reco::BeamSpot> BSLabel_;
+  edm::EDGetTokenT<reco::VertexCompositePtrCandidateCollection> v0PtrCollection_;
 
 
   bool OnlyBest_;
@@ -108,7 +109,7 @@ private:
   int mumME1Clean;
   
   std::vector<float>       *mumC2;
-  std::vector<int>         *mumAngT, *mumNHits, *mumNPHits; 
+  std::vector<int>         *mumAngT, *mumNHits, *mumNPHits, *BSINDEX; 
   std::vector<float>       *mupC2;
   std::vector<int>         *mupAngT, *mupNHits, *mupNPHits;
   std::vector<float>       *mumdxy, *mupdxy, *mumdz, *mupdz;
@@ -125,7 +126,7 @@ private:
   unsigned int             nB;
   unsigned int             nMu;
   
-  std::vector<float>       *Bc_mass;
+  std::vector<float>       *Bspion_mass_vertex, *Bspion_mass;
 
   std::vector<float>       *B_mass, *B_px, *B_py, *B_pz;
   
@@ -151,6 +152,8 @@ private:
   unsigned int             nVtx;
   float                    priVtxX, priVtxY, priVtxZ, priVtxXE, priVtxYE, priVtxZE, priVtxCL;
   float                    priVtxXYE, priVtxXZE, priVtxYZE;
+
+  std::vector<int>         *pion_PV;
   
   // ********************************** ************************************************************************
 
